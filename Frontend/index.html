@@ -1,0 +1,32 @@
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>🧠 Sentiment Analyzer</h1>
+
+        <!-- Input field to enter the subreddit -->
+        <div class="input-group">
+            <input type="text" id="redditSubreddit" placeholder="Enter subreddit (e.g., technology)">
+            <button onclick="fetchRedditPosts()">Fetch Reddit Posts</button>
+        </div>
+
+        <h2>Reddit Posts</h2>
+        <div id="redditPosts" class="card-container"></div>
+
+        <h2>Analyze Sentiment</h2>
+        <textarea id="inputText" rows="5" placeholder="Type or paste a Reddit post here..."></textarea><br>
+        <button onclick="analyze()">Analyze</button>
+        <pre id="result"></pre>
+    </div>
+</body>
+</html>
